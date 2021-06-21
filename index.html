@@ -26,18 +26,33 @@
 </head>
 <body>
 	<header class="l-header">
-		<div class="o-header__logo">
+		<a class="o-header__logo" href="Logo Oh My Food">
 			<img src="assets/logo/ohmyfood.svg" alt="Logo Oh My Food">
-		</div>
+		</a>
 		<nav class="o-header__nav">
 			<ul class="o-nav__lv1">
 				<li class="o-links__lv1">
-					<a href="#">Nos restaurants</a>
+					<a href="#">
+						<i class="fas fa-sort-down"></i>
+						<span>Nos restaurants</span>
+					</a>
 					<ul class="o-nav__lv2">
-						<li class="o-links__lv2"><a href="a-la-francaise.html">A la française</a></li>
-						<li class="o-links__lv2"><a href="la-note-enchantee.html">La note enchantée</a></li>
-						<li class="o-links__lv2"><a href="la-palette-du-gout.html">La palette du goût</a></li>
-						<li class="o-links__lv2"><a href="le-delice-des-sens.html">Le délice des sens</a></li>
+						<li class="o-links__lv2">
+							<i class="fas fa-store"></i>
+							<a href="a-la-francaise.html" alt="Restaurant A la française">A la française</a>
+						</li>
+						<li class="o-links__lv2">
+							<i class="fas fa-store"></i>
+							<a href="la-note-enchantee.html" alt="Restaurant La note enchantée">La note enchantée</a>
+						</li>
+						<li class="o-links__lv2">
+							<i class="fas fa-store"></i>
+							<a href="la-palette-du-gout.html" alt="Restaurant La palette du goût">La palette du goût</a>
+						</li>
+						<li class="o-links__lv2">
+							<i class="fas fa-store"></i>
+							<a href="le-delice-des-sens.html" alt="Restaurant Le délice des sens">Le délice des sens</a>
+						</li>
 					</ul>
 				</li>
 			</ul>
@@ -86,7 +101,7 @@
 			<h2>Restaurants</h2>
 			<div class="o-restaurants__container">
 				<!-- La palette du goût -->
-				<div class="o-restaurant__card" data-type="new">
+				<a class="o-restaurant__card" data-type="new" href="la-palette-du-gout.html" alt="La palette du goût">
 					<picture class="o-card__photo">
 						<source srcset="#" media="(min-width: 375px)">
 						<img src="#" alt="">
@@ -99,10 +114,10 @@
 						<i class="far fa-heart"></i>
 						<i class="fas fa-heart"></i>
 					</div>
-				</div>
+				</a>
 
 				<!-- La note enchantée -->
-				<div class="o-restaurant__card" data-type="new">
+				<a class="o-restaurant__card" data-type="new" href="La note enchantée" alt="La note enchantée">
 					<picture class="o-card__photo">
 						<source srcset="#" media="(min-width: 375px)">
 						<img src="#" alt="">
@@ -115,10 +130,10 @@
 						<i class="far fa-heart"></i>
 						<i class="fas fa-heart"></i>
 					</div>
-				</div>
+				</a>
 
 				<!-- A la française -->
-				<div class="o-restaurant__card">
+				<a class="o-restaurant__card" href="a-la-francaise.html" alt="A la française">
 					<picture class="o-card__photo">
 						<source srcset="#" media="(min-width: 375px)">
 						<img src="#" alt="">
@@ -131,10 +146,10 @@
 						<i class="far fa-heart"></i>
 						<i class="fas fa-heart"></i>
 					</div>
-				</div>
+				</a>
 
 				<!-- Le délice des sens -->
-				<div class="o-restaurant__card">
+				<a class="o-restaurant__card" href="le-delice-des-sens.html" alt="Le délice des sens">
 					<picture class="o-card__photo">
 						<source srcset="#" media="(min-width: 375px)">
 						<img src="#" alt="">
@@ -147,32 +162,40 @@
 						<i class="far fa-heart"></i>
 						<i class="fas fa-heart"></i>
 					</div>
-				</div>
+				</a>
 			</div>
 		</section>
 	</main>
 
 	<footer class="l-footer">
-		<div class="o-footer__logo">
+		<a class="o-footer__logo" href="index.html" alt="Logo Oh My Food">
 			<img src="assets/logo/ohmyfood.svg" alt="Logo Oh My Food">
-		</div>
+		</a>
 		<div class="o-footer__nav">
-			<ol>
+			<ul>
 				<li>
 					<a href="#" alt="Proposer un restaurant à Oh My Food">
-						<i></i>
+						<i class="fas fa-utensils"></i>
 						<span>Proposer un restaurant</span>
 					</a>
 				</li>
 				<li>
 					<a href="#" alt="Devenir partenaire de Oh My Food">
-						<i></i>
+						<i class="fas fa-hands-helping"></i>
 						<span>Devenir partenaire</span>
 					</a>
 				</li>
-				<li><a href="#" alt="Les mentions légales de Oh My Food">Mentions Légales</a></li>
-				<li><a href="#" alt="Contactez votre restaurant Oh My Food">Contact</a></li>
-			</ol>
+				<li>
+					<a href="#" alt="Les mentions légales de Oh My Food">
+						<span>Mentions Légales</span>
+					</a>
+				</li>
+				<li>
+					<a href="#" alt="Contactez votre restaurant Oh My Food">
+						<span>Contact</span>
+					</a>
+				</li>
+			</ul>
 		</div>
 	</footer>
 </body>
