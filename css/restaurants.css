@@ -8,5 +8,38 @@
 	--- End Summary ---
 */
 /*** 01 - Général ***/
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  padding-top: 63px;
+}
+
+.l-header {
+  background-color: #ffffff;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 5px 10px 0 #d9d9d9;
+  height: 63px;
+  width: 100%;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+}
+
+.l-header__nav {
+  display: none;
+}
+
+/*** 01 - Fin Général ***/
 
 /*# sourceMappingURL=restaurants.css.map */

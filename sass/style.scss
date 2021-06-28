@@ -11,6 +11,45 @@
 
 /*** 01 - Général ***/
 
-$purple : #9356DC;
-$pink : #FF79DA;
-$green : #99E2D0;
+	$purple : #9356DC;
+	$pink : #FF79DA;
+	$green : #99E2D0;
+	$dark : #000000;
+	$light : #ffffff;
+
+	$header-height--mobile : 63px;
+
+
+	*, *::before, *::after{
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		-o-box-sizing: border-box;
+		-ms-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+
+	body {
+		margin: 0;
+		padding: 0;
+		padding-top: $header-height--mobile;
+	}
+
+	.l-header {
+		background-color: $light;
+		display: flex;
+		flex-flow: row wrap;
+		align-items: center;
+		justify-content: center;
+		box-shadow: 0 5px 10px 0 lighten($dark, 85%);
+		height: $header-height--mobile;
+		width: 100%;
+		position: fixed;
+		z-index: 9999;
+		top: 0;
+	}
+
+	.l-header__nav {
+		display: none;
+	}
+
+/*** 01 - Fin Général ***/
