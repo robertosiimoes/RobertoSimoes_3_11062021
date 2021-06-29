@@ -1,0 +1,34 @@
+/*
+	--- SUMMARY ---
+
+		00 - VARIABLES
+
+	--- END SUMMARY ---
+*/
+
+
+
+/*** 00 - VARIABLES ***/
+
+	$purple : #9356DC;
+	$pink : #FF79DA;
+	$green : #99E2D0;
+	$dark : #000000;
+	$light : #ffffff;
+	$grey : #353535;
+	$grey-light : #eaeaea;
+	$grey-extralight : #f6f6f6;
+
+	$bg-button : linear-gradient(180deg, $pink 10%, $purple 95%);
+	$bg-button--hover : $purple;
+
+	$header-height--mobile : 63px;
+	$header-height--tablet : 83px;
+	$header-height--desktop : 103px;
+
+	$font : 'Roboto', sans-serif;
+
+	$padding--mobile : 20px;
+	$padding--tablet : 40px;
+
+/*** 00 - END VARIABLES ***/

@@ -1,1 +1,74 @@
-@import 'style';
+/*
+	--- SUMMARY ---
+
+		01 - HERO
+		02 - WORKING
+		03 - RESTAURANTS
+
+	--- END SUMMARY ---
+*/
+
+
+	@import 'base';
+
+
+/*** 01 - HERO ***/
+
+	.o-hero {
+
+		&--home {
+			background-color: $grey-extralight;
+
+			.o-button {
+				margin-top: 10px;
+			}
+		}
+
+		&__location {
+			background-color: $grey-light;
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: center;
+			align-items: center;
+			padding: 17px;
+
+			i {
+				margin-right: 18px;
+			}
+
+			span {
+				color: $grey;
+				font-family: $font;
+				font-size: 15px;
+				font-weight: 400;
+			}
+		}
+
+		&__content {
+			display: flex;
+			flex-flow: column wrap;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+			padding: 45px $padding--mobile 55px;
+		}
+
+		&__title {
+			padding: 0 20px;
+		}
+
+		&__text {
+			color: $grey;
+		}
+	}
+
+	.o-working {
+		padding: 50px $padding--mobile 70px;
+	}
+
+	.o-restaurants {
+		background-color: $grey-extralight;
+		padding: 60px $padding--mobile 65px;
+	}
+
+/*** 01 - END HERO ***/

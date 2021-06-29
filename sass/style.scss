@@ -1,28 +1,17 @@
 /*
 	--- SUMMARY ---
 
-		01 - GENERAL 		: VARIABLES, *, HTML, BODY, GRID
+		01 - GENERAL 		: *, HTML, BODY, GRID, TITLES, TEXT, BUTTONS
 		02 - LAYOUTS 		: HEADER, FOOTER
 
 	--- END SUMMARY ---
 */
 
 
+	@import 'base';
+
 
 /*** 01 - GENERAL ***/
-
-	$purple : #9356DC;
-	$pink : #FF79DA;
-	$green : #99E2D0;
-	$dark : #000000;
-	$light : #ffffff;
-	$grey: #353535;
-
-
-	$header-height--mobile : 63px;
-	$header-height--tablet : 83px;
-	$header-height--desktop : 103px;
-
 
 	*, *::before, *::after {
 		-webkit-box-sizing: border-box;
@@ -43,6 +32,35 @@
 		font-family: 'Roboto Regular', sans-serif;
 		font-size: 16px;
 		font-weight: 300;
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+		margin: 0;
+		padding: 0;
+	}
+
+	p {
+		padding: 20px 0;
+		margin: 0;
+	}
+
+	.o-button {
+		background: $bg-button;
+		color: $light;
+		text-decoration: none;
+		font-size: 15px;
+		font-weight: 400;
+		display: flex;
+		flex-flow: row wrap;
+		align-items: center;
+		justify-content: center;
+		border-radius: 50px;
+		padding: 19px 22px;
+		transition: all 450ms ease;
+
+		&:hover {
+			cursor: pointer;
+		}
 	}
 
 /*** 01 - END GENERAL ***/
@@ -206,6 +224,10 @@
 		/*** 768 PX ***/
 		@media screen and (min-width: 768px) {
 
+			body {
+				padding-top: $header-height--tablet;
+			}
+
 			/*** HEADER ***/
 
 				.l-header {
@@ -365,6 +387,10 @@
 
 		/*** 1200 PX ***/
 		@media screen and (min-width: 1200px) {
+
+			body {
+				padding-top: $header-height--desktop;
+			}
 
 			/*** HEADER ***/
 

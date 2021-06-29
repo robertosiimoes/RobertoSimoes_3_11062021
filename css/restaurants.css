@@ -1,11 +1,20 @@
 /*
 	--- SUMMARY ---
 
-		01 - GENERAL 		: VARIABLES, *, HTML, BODY, GRID
+		01 - GENERAL 		: *, HTML, BODY, GRID, TITLES, TEXT, BUTTONS
 		02 - LAYOUTS 		: HEADER, FOOTER
 
 	--- END SUMMARY ---
 */
+/*
+	--- SUMMARY ---
+
+		00 - VARIABLES
+
+	--- END SUMMARY ---
+*/
+/*** 00 - VARIABLES ***/
+/*** 00 - END VARIABLES ***/
 /*** 01 - GENERAL ***/
 *, *::before, *::after {
   -webkit-box-sizing: border-box;
@@ -26,6 +35,34 @@ html {
   font-family: "Roboto Regular", sans-serif;
   font-size: 16px;
   font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  padding: 20px 0;
+  margin: 0;
+}
+
+.o-button {
+  background: linear-gradient(180deg, #FF79DA 10%, #9356DC 95%);
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 400;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  padding: 19px 22px;
+  transition: all 450ms ease;
+}
+.o-button:hover {
+  cursor: pointer;
 }
 
 /*** 01 - END GENERAL ***/
@@ -153,6 +190,10 @@ html {
 }
 /*** 768 PX ***/
 @media screen and (min-width: 768px) {
+  body {
+    padding-top: 83px;
+  }
+
   /*** HEADER ***/
   .l-header {
     justify-content: flex-start;
@@ -283,6 +324,10 @@ html {
 }
 /*** 1200 PX ***/
 @media screen and (min-width: 1200px) {
+  body {
+    padding-top: 103px;
+  }
+
   /*** HEADER ***/
   .l-header {
     height: 103px;
