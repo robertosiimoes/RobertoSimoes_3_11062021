@@ -89,15 +89,68 @@ html {
 /*** FOOTER ***/
 .l-footer {
   background-color: #353535;
+  padding: 25px;
 }
 .l-footer__container {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column wrap;
   width: 100%;
+}
+.l-footer__logo {
+  margin-bottom: 25px;
+}
+.l-footer__logo img {
+  height: 20px;
+  filter: invert(100%);
+}
+.l-footer__nav {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+.l-footer li {
+  display: block;
+  padding: 5px 0;
+}
+.l-footer a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 15px;
+  transition: color 350ms ease;
+}
+.l-footer a:hover {
+  color: #99E2D0;
+  transition: color 350ms ease;
+}
+.l-footer a[data-type=cta_link] {
+  font-weight: 500;
+}
+.l-footer i {
+  margin-right: 12px;
+  max-width: 11px;
+  font-size: 13px;
 }
 
 /*** END FOOTER ***/
 /*** MEDIAQUERIES ***/
+/*** 600 PX ***/
+@media screen and (min-width: 600px) {
+  /*** FOOTER ***/
+  .l-footer__nav {
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .l-footer li {
+    width: 50%;
+  }
+
+  /*** FOOTER ***/
+}
 /*** 768 PX ***/
 @media screen and (min-width: 768px) {
   /*** HEADER ***/
@@ -195,6 +248,38 @@ html {
   }
 
   /*** END HEADER ***/
+  /*** FOOTER ***/
+  .l-footer__container {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+  }
+  .l-footer__nav {
+    justify-content: flex-end;
+    width: calc(100% - 150px);
+  }
+  .l-footer__logo {
+    width: 150px;
+    margin-bottom: 0;
+  }
+  .l-footer__logo img {
+    height: 25px;
+  }
+  .l-footer li {
+    padding-right: 15px;
+    width: auto;
+  }
+
+  /*** FOOTER ***/
+}
+/*** 900 PX ***/
+@media screen and (min-width: 900px) {
+  /*** FOOTER ***/
+  .l-footer li {
+    padding-right: 20px;
+  }
+
+  /*** FOOTER ***/
 }
 /*** 1200 PX ***/
 @media screen and (min-width: 1200px) {
@@ -213,9 +298,17 @@ html {
 
   /*** END HEADER ***/
   /*** FOOTER ***/
+  .l-footer {
+    height: 103px;
+  }
   .l-footer__container {
     max-width: 1200px;
     margin: auto;
+    height: 100%;
+    align-items: center;
+  }
+  .l-footer li {
+    padding: 0 25px;
   }
 
   /*** END FOOTER ***/

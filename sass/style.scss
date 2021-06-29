@@ -121,11 +121,58 @@
 
 		.l-footer {
 			background-color: $grey;
+			padding: 25px;
 
 			&__container {
 				display: flex;
-				flex-flow: row wrap;
+				flex-flow: column wrap;
 				width: 100%;
+			}
+
+			&__logo {
+				margin-bottom: 25px;
+
+				img {
+					height: 20px;
+					filter: invert(100%);					;
+				}
+			}
+
+			&__nav {
+				margin: 0;
+				padding: 0;
+				list-style-type: none;
+				display: flex;
+				flex-flow: column wrap;
+				justify-content: center;
+				align-items: flex-start;
+			}
+
+			li {
+				display: block;
+				padding: 5px 0;
+			}
+
+			a {
+				color: $light;
+				text-decoration: none;
+				font-size: 15px;
+				transition: color 350ms ease;
+
+				&:hover {
+					color: $green;
+					transition: color 350ms ease;
+				}
+			}
+
+			a[data-type='cta_link'] {
+				font-weight: 500;
+			}
+
+			i {
+				margin-right: 12px;
+				max-width: 11px;
+				font-size: 13px;
 			}
 		}
 
@@ -133,6 +180,28 @@
 
 
 	/*** MEDIAQUERIES ***/
+
+		/*** 600 PX ***/
+		@media screen and (min-width: 600px) {
+
+			/*** FOOTER ***/
+
+				.l-footer {
+
+					&__nav {
+						flex-flow: row wrap;
+						justify-content: flex-start;
+						align-items: center;
+					}
+
+					li {
+						width: 50%;
+					}
+				}
+
+			/*** FOOTER ***/
+		}
+
 
 		/*** 768 PX ***/
 		@media screen and (min-width: 768px) {
@@ -245,7 +314,53 @@
 
 			/*** END HEADER ***/
 
+
+			/*** FOOTER ***/
+
+				.l-footer {
+					
+					&__container {
+						display: flex;
+						flex-flow: row wrap;
+						width: 100%;
+					}
+
+					&__nav {
+						justify-content: flex-end;
+						width: calc(100% - 150px);
+					}
+
+					&__logo {
+						width: 150px;
+						margin-bottom: 0;
+
+						img {
+							height: 25px;
+						}
+					}
+
+					li {
+						padding-right: 15px;
+						width: auto;
+					}
+				}
+
+			/*** FOOTER ***/
 		}
+
+
+		/*** 900 PX ***/
+		@media screen and (min-width: 900px) {
+
+			/*** FOOTER ***/
+
+				.l-footer li {
+					padding-right: 20px;
+				}
+
+			/*** FOOTER ***/
+		}
+
 
 
 		/*** 1200 PX ***/
@@ -271,9 +386,19 @@
 
 			/*** FOOTER ***/
 
-				.l-footer__container {
-					max-width: 1200px;
-					margin: auto;
+				.l-footer {
+					height: $header-height--desktop;
+
+					&__container {
+						max-width: 1200px;
+						margin: auto;
+						height: 100%;
+						align-items: center;
+					}
+
+					li {
+						padding: 0 25px;
+					}
 				}
 
 			/*** END FOOTER ***/
