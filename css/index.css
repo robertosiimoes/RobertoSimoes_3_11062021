@@ -5,6 +5,7 @@
 		01 - HERO
 		02 - WORKING
 		03 - RESTAURANTS
+		04 - MEDIAQUERIES
 
 	--- END SUMMARY ---
 */
@@ -66,6 +67,10 @@
 }
 .o-working__list {
   counter-reset: listCounter;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: flex-start;
+  justify-content: center;
 }
 .o-working__card {
   background-color: #f6f6f6;
@@ -78,8 +83,10 @@
   align-items: center;
   justify-content: flex-start;
   padding: 25px;
+  width: 100%;
   position: relative;
   counter-increment: listCounter;
+  transition: all ease-in-out 350ms;
 }
 .o-working__card:nth-child(2) {
   margin: 20px 0;
@@ -139,11 +146,32 @@
   width: 100%;
 }
 
+.o-card__photo {
+  position: relative;
+}
 .o-card__photo img {
   border-radius: 10px 10px 0 0;
   height: 175px;
   width: 100%;
   object-fit: cover;
+}
+.o-card__photo::before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.15);
+  border-radius: 10px 10px 0 0;
+  display: block;
+  height: 175px;
+  width: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: all ease-in-out 350ms;
+}
+.o-card__photo:hover::before {
+  opacity: 1;
+  transition: all ease-in-out 350ms;
 }
 .o-card__content {
   display: flex;
@@ -153,7 +181,7 @@
 }
 .o-card__desc {
   padding: 20px 15px;
-  width: calc(100% - 75px);
+  width: calc(100% - 50px);
 }
 .o-card__desc h3 {
   margin-bottom: 7px;
@@ -166,15 +194,69 @@
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
-  height: 75px;
-  width: 75px;
+  height: 50px;
+  width: 50px;
 }
 .o-card__favorite::before {
   content: "";
   font-family: "Font Awesome 5 Free";
+  font-size: 20px;
   display: block;
+  transition: all ease-in-out 350ms;
+}
+.o-card__favorite:hover::before {
+  color: #9356DC;
+  font-weight: 900;
+  transition: all ease-in-out 350ms;
 }
 
 /*** 03 - RESTAURANTS HERO ***/
+/*** 04 - MEDIAQUERIES ***/
+/*** 768 PX ***/
+@media screen and (min-width: 768px) {
+  .o-working {
+    padding: 50px 40px 70px;
+  }
+
+  .o-working__title {
+    text-align: center;
+  }
+
+  .o-working__list {
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .o-working__card {
+    flex-flow: column wrap;
+    text-align: center;
+    padding: 25px 15px;
+    width: 30%;
+  }
+  .o-working__card i {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+}
+/*** 1024 PX ***/
+@media screen and (min-width: 1024px) {
+  .o-working__card {
+    max-width: 300px;
+  }
+}
+/*** 1200 PX ***/
+@media screen and (min-width: 1200px) {
+  .o-working__list {
+    max-width: 1200px;
+    margin: auto;
+    justify-content: center;
+  }
+
+  .o-working__card {
+    margin: 0 50px;
+  }
+}
+/*** 04 - END MEDIAQUERIES ***/
 
 /*# sourceMappingURL=index.css.map */

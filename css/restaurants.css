@@ -234,7 +234,7 @@ p {
   }
 
   .l-links__lv1 {
-    padding: 0 10px;
+    padding: 0 7px;
   }
   .l-links__lv1:hover > a {
     color: #9356DC;
@@ -358,6 +358,7 @@ p {
 
   /*** END FOOTER ***/
 }
+/*** END MEDIAQUERIES ***/
 /*** 02 - END LAYOUTS ***/
 
 /*# sourceMappingURL=restaurants.css.map */
