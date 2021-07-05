@@ -11,11 +11,13 @@
 /*** 00 - VARIABLES ***/
 
 	$purple : #9356DC;
+	$purple-light: #f5edff;
 	$pink : #FF79DA;
 	$green : #99E2D0;
 	$dark : #000000;
 	$light : #ffffff;
 	$grey : #353535;
+	$grey-medium : #7e7e7e;
 	$grey-light : #eaeaea;
 	$grey-extralight : #f6f6f6;
 
@@ -30,5 +32,7 @@
 
 	$padding--mobile : 20px;
 	$padding--tablet : 40px;
+
+	$boxShadow : 0 5px 10px 0 lighten($dark, 85%);
 
 /*** 00 - END VARIABLES ***/
