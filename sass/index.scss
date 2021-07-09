@@ -39,7 +39,7 @@
 
 			span {
 				color: $grey;
-				font-family: $font;
+				font-family: $font-text;
 				font-size: 15px;
 				font-weight: 400;
 			}
@@ -261,7 +261,7 @@
 
 			&::before{
 				content:'\f004';
-				font-family: "Font Awesome 5 Free";
+				font-family: $font-icon;
 				font-size: 20px;
 				display: block;
 				transition: all ease-in-out 350ms;

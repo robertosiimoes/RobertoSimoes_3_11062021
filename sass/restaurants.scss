@@ -27,7 +27,21 @@
 
 /*** 02 - MENU ***/
 
-	//
+	.o-menu {
+		background-color: $grey-extralight;
+		border-radius: 42px 42px 0 0;
+		transform: translateY(-40px);
+		padding: 35px 15px;
+		margin-bottom: -40px;
+
+		&__head {
+
+			&__title {
+				font-family: $font-title;
+				font-weight: 400;
+			}
+		}
+	}
 
 /*** 02 - END MENU ***/
 

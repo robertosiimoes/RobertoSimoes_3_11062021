@@ -41,7 +41,7 @@ body {
 
 html {
   color: #000000;
-  font-family: "Roboto Regular", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 300;
 }
@@ -379,6 +379,18 @@ p {
 
 /*** 01 - END HERO ***/
 /*** 02 - MENU ***/
+.o-menu {
+  background-color: #f6f6f6;
+  border-radius: 42px 42px 0 0;
+  transform: translateY(-40px);
+  padding: 35px 15px;
+  margin-bottom: -40px;
+}
+.o-menu__head__title {
+  font-family: "Shrikhand", sans-serif;
+  font-weight: 400;
+}
+
 /*** 02 - END MENU ***/
 /*** 03 - MEDIAQUERIES ***/
 /*** 03 - END MEDIAQUERIES ***/
