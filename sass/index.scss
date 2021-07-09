@@ -10,7 +10,7 @@
 */
 
 
-	@import 'base';
+	@import 'style';
 
 
 /*** 01 - HERO ***/
@@ -171,6 +171,29 @@
 			flex-flow: column wrap;
 			margin-top: 20px;
 			width: 100%;
+
+			&[data-type="new"] {
+				position: relative;
+			}
+
+			&[data-type="new"]::after {
+				content: 'Nouveau';
+				display: flex;
+				flex-flow: row wrap;
+				justify-content: center;
+				align-items: center;
+				text-align: center;
+				font-size: 13px;
+				font-weight: 500;
+				color: $green-dark;
+				height: 30px;
+				width: 80px;
+				border-radius: 3px;
+				background-color: $green;
+				position: absolute;
+				right: 10px;
+				top: 10px;
+			}
 		}
 	}
 

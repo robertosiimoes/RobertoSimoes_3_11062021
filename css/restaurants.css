@@ -1,6 +1,15 @@
 /*
 	--- SUMMARY ---
 
+		01 - HERO
+		02 - MENU
+		03 - MEDIAQUERIES
+
+	--- END SUMMARY ---
+*/
+/*
+	--- SUMMARY ---
+
 		01 - GENERAL 		: *, HTML, BODY, GRID, TITLES, TEXT, BUTTONS
 		02 - LAYOUTS 		: HEADER, FOOTER
 
@@ -360,5 +369,17 @@ p {
 }
 /*** END MEDIAQUERIES ***/
 /*** 02 - END LAYOUTS ***/
+/*** 01 - HERO ***/
+.o-hero--menu img {
+  height: 260px;
+  width: 100%;
+  object-fit: cover;
+}
+
+/*** 01 - END HERO ***/
+/*** 02 - MENU ***/
+/*** 02 - END MENU ***/
+/*** 03 - MEDIAQUERIES ***/
+/*** 03 - END MEDIAQUERIES ***/
 
 /*# sourceMappingURL=restaurants.css.map */
