@@ -281,7 +281,7 @@
 					}
 
 					&:hover .l-nav__lv2 {
-						opacity: 1;
+						visibility: visible;
 						transition: all 350ms ease;
 					}
 
@@ -300,7 +300,7 @@
 				}
 
 				.l-nav__lv2 {
-					opacity: 0;
+					visibility: hidden;
 					display: block;
 					background-color: #ffffff;
 					margin: 0;
@@ -308,6 +308,7 @@
 					list-style-type: none;
 					position: absolute;
 					width: 200px;
+					top: $header-height--desktop;
 					box-shadow: 0 5px 10px 0 lighten($dark, 85%);
 					transition: all 350ms ease;
 				}

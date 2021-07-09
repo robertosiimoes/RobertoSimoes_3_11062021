@@ -335,17 +335,18 @@
 		.o-restaurants {
 
 			&__container {
-				justify-content: flex-start;
+				justify-content: space-between;
 			}
 
 			&__title {
 				text-align: center;
-				margin-bottom: 15px;
+				margin-bottom: 50px;
 			}
 
 			&__card {
-				width: 30%;
-				margin: 15px;
+				width: 32%;
+				margin-top: 12px;
+				margin-bottom: 12px;
 			}
 		}
 	}

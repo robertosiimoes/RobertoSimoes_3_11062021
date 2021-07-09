@@ -250,7 +250,7 @@ p {
     transition: color 350ms ease;
   }
   .l-links__lv1:hover .l-nav__lv2 {
-    opacity: 1;
+    visibility: visible;
     transition: all 350ms ease;
   }
   .l-links__lv1 a {
@@ -266,7 +266,7 @@ p {
   }
 
   .l-nav__lv2 {
-    opacity: 0;
+    visibility: hidden;
     display: block;
     background-color: #ffffff;
     margin: 0;
@@ -274,6 +274,7 @@ p {
     list-style-type: none;
     position: absolute;
     width: 200px;
+    top: 103px;
     box-shadow: 0 5px 10px 0 #d9d9d9;
     transition: all 350ms ease;
   }
