@@ -152,6 +152,11 @@
 		background-color: $grey-extralight;
 		padding: 60px $padding--mobile 65px;
 
+		&__container {
+			display: flex;
+			flex-flow: column wrap;
+		}
+
 		&__title {
 			margin-bottom: 10px;
 		}
@@ -252,6 +257,21 @@
 
 /*** 04 - MEDIAQUERIES ***/
 
+	/*** 600 PX ***/
+	@media screen and (min-width: 600px) {
+		.o-restaurants {
+
+			&__container {
+				flex-flow: row wrap;
+				justify-content: space-between;
+			}
+
+			&__card {
+				width: 48%;
+			}
+		}
+	}
+
 	/*** 768 PX ***/
 	@media screen and (min-width: 768px) {
 
@@ -288,6 +308,23 @@
 		.o-working__card {
 			max-width: 300px;
 		}
+
+		.o-restaurants {
+
+			&__container {
+				justify-content: flex-start;
+			}
+
+			&__title {
+				text-align: center;
+				margin-bottom: 15px;
+			}
+
+			&__card {
+				width: 30%;
+				margin: 15px;
+			}
+		}
 	}
 
 
@@ -301,6 +338,14 @@
 
 		.o-working__card {
 			margin: 0 50px;
+		}
+
+		.o-restaurants {
+
+			&__container {
+				max-width: 1200px;
+				margin: auto;
+			}
 		}
 	}
 

@@ -131,6 +131,10 @@
   background-color: #f6f6f6;
   padding: 60px 20px 65px;
 }
+.o-restaurants__container {
+  display: flex;
+  flex-flow: column wrap;
+}
 .o-restaurants__title {
   margin-bottom: 10px;
 }
@@ -212,6 +216,16 @@
 
 /*** 03 - RESTAURANTS HERO ***/
 /*** 04 - MEDIAQUERIES ***/
+/*** 600 PX ***/
+@media screen and (min-width: 600px) {
+  .o-restaurants__container {
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+  .o-restaurants__card {
+    width: 48%;
+  }
+}
 /*** 768 PX ***/
 @media screen and (min-width: 768px) {
   .o-working {
@@ -244,6 +258,18 @@
   .o-working__card {
     max-width: 300px;
   }
+
+  .o-restaurants__container {
+    justify-content: flex-start;
+  }
+  .o-restaurants__title {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .o-restaurants__card {
+    width: 30%;
+    margin: 15px;
+  }
 }
 /*** 1200 PX ***/
 @media screen and (min-width: 1200px) {
@@ -255,6 +281,11 @@
 
   .o-working__card {
     margin: 0 50px;
+  }
+
+  .o-restaurants__container {
+    max-width: 1200px;
+    margin: auto;
   }
 }
 /*** 04 - END MEDIAQUERIES ***/
