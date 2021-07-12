@@ -34,12 +34,66 @@
 		padding: 35px 15px;
 		margin-bottom: -40px;
 
-		&__head {
+		&__content {
+			margin-bottom: 10px;
+			margin-top: 35px;
+		}
+
+		&__name {
+			font-family: $font-title;
+			font-weight: 400;
+		}
+
+		&__title {
+			font-weight: 300;
+			font-size: 16px;
+			text-transform: uppercase;
+			padding-bottom: 9px;
+			position: relative;
+
+			&::after {
+				content: '';
+				background-color: $green;
+				display: block;
+				height: 3px;
+				width: 40px;
+				position: absolute;
+				left: 0;
+				bottom: 0;
+			}
+		}
+
+		.o-card {
+			background-color: $light;
+			border-radius: 15px;
+			box-shadow: $boxShadow;
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: space-between;
+			align-items: center;
+			padding: 15px 20px 15px 10px;
+			margin: 15px 0 0 0;
 
 			&__title {
-				font-family: $font-title;
-				font-weight: 400;
+				width: 100%;
 			}
+
+			&__text {
+				margin-top: 10px;
+				padding: 0;
+			}
+
+			&__title,
+			&__price {
+				font-size: 16px;
+				font-weight: 500;
+			}
+		}
+
+		.o-button {
+			max-width: 190px;
+			margin: auto;
+			margin-top: 40px;
 		}
 	}
 
