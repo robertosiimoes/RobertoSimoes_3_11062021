@@ -1,0 +1,41 @@
+/*
+	--- SUMMARY ---
+
+		01 - ANIMATIONS
+
+	--- END SUMMARY ---
+*/
+/*** 01 - ANIMATIONS ***/
+@keyframes ChangeWith {
+  from {
+    width: 100%;
+  }
+  to {
+    width: calc(100% - 70px);
+  }
+}
+@keyframes MenuCard {
+  from {
+    opacity: 0;
+    width: 0px;
+  }
+  to {
+    opacity: 1;
+    width: 70px;
+  }
+}
+@keyframes RotateCheck {
+  from {
+    opacity: 0;
+    width: 0px;
+    transform: rotate(0);
+  }
+  to {
+    opacity: 1;
+    width: 70px;
+    transform: rotate(360deg);
+  }
+}
+/*** 01 - END ANIMATIONS ***/
+
+/*# sourceMappingURL=animations.css.map */

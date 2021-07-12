@@ -1,0 +1,50 @@
+/*
+	--- SUMMARY ---
+
+		01 - ANIMATIONS
+
+	--- END SUMMARY ---
+*/
+
+
+
+/*** 01 - ANIMATIONS ***/
+
+
+// Changing width of elements
+@keyframes ChangeWith {
+	from {
+		width: 100%;
+	}
+	to   {
+		width: calc(100% - 70px);
+	}
+}
+
+// Appearing pseudo element checked
+@keyframes MenuCard {
+	from {
+		opacity: 0;
+		width: 0px;
+	}
+	to   {
+		opacity: 1;
+		width: 70px;
+	}
+}
+
+// Rotate pseudo element checked content
+@keyframes RotateCheck {
+	from {
+		opacity: 0;
+		width: 0px;
+		transform: rotate(0);
+	}
+	to {
+		opacity: 1;
+		width: 70px;
+		transform: rotate(360deg);
+	}
+}
+
+/*** 01 - END ANIMATIONS ***/
