@@ -524,17 +524,16 @@ p {
   right: 10px;
   top: 10px;
 }
-
-.o-card__photo {
+.o-restaurants .o-card__photo {
   position: relative;
 }
-.o-card__photo img {
+.o-restaurants .o-card__photo img {
   border-radius: 10px 10px 0 0;
   height: 175px;
   width: 100%;
   object-fit: cover;
 }
-.o-card__photo::before {
+.o-restaurants .o-card__photo::before {
   content: "";
   background-color: rgba(0, 0, 0, 0.15);
   border-radius: 10px 10px 0 0;
@@ -548,27 +547,27 @@ p {
   opacity: 0;
   transition: all ease-in-out 350ms;
 }
-.o-card__photo:hover::before {
+.o-restaurants .o-card__photo:hover::before {
   opacity: 1;
   transition: all ease-in-out 350ms;
 }
-.o-card__content {
+.o-restaurants .o-card__content {
   display: flex;
   flex-flow: row wrap;
   align-items: center;
   justify-content: space-between;
 }
-.o-card__desc {
+.o-restaurants .o-card__desc {
   padding: 20px 15px;
   width: calc(100% - 50px);
 }
-.o-card__desc h3 {
+.o-restaurants .o-card__desc h3 {
   margin-bottom: 7px;
 }
-.o-card__desc span {
+.o-restaurants .o-card__desc span {
   font-weight: 300;
 }
-.o-card__favorite {
+.o-restaurants .o-card__favorite {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -576,14 +575,14 @@ p {
   height: 50px;
   width: 50px;
 }
-.o-card__favorite::before {
+.o-restaurants .o-card__favorite::before {
   content: "";
   font-family: "Font Awesome 5 Free";
   font-size: 20px;
   display: block;
   transition: all ease-in-out 350ms;
 }
-.o-card__favorite:hover::before {
+.o-restaurants .o-card__favorite:hover::before {
   color: #9356DC;
   font-weight: 900;
   transition: all ease-in-out 350ms;
@@ -606,17 +605,14 @@ p {
   .o-working {
     padding: 50px 40px 70px;
   }
-
   .o-working__title {
     text-align: center;
   }
-
   .o-working__list {
     flex-flow: row wrap;
     align-items: center;
     justify-content: space-between;
   }
-
   .o-working__card {
     flex-flow: column wrap;
     text-align: center;

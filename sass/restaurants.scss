@@ -63,7 +63,7 @@
 			}
 		}
 
-		.o-card {
+		&__item {
 			background-color: $light;
 			border-radius: 15px;
 			box-shadow: $boxShadow;
@@ -92,6 +92,9 @@
 				right: 0;
 				top: 0;
 			}
+		}
+
+		.o-item {
 
 			&__title {
 				width: 100%;

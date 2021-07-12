@@ -412,7 +412,7 @@ p {
   left: 0;
   bottom: 0;
 }
-.o-menu .o-card {
+.o-menu__item {
   background-color: #ffffff;
   border-radius: 15px;
   box-shadow: 0 5px 10px 0 #d9d9d9;
@@ -424,7 +424,7 @@ p {
   margin: 15px 0 0 0;
   position: relative;
 }
-.o-menu .o-card::after {
+.o-menu__item::after {
   content: "";
   font-family: "Font Awesome 5 Free";
   font-weight: 600;
@@ -441,21 +441,21 @@ p {
   right: 0;
   top: 0;
 }
-.o-menu .o-card__title {
+.o-menu .o-item__title {
   width: 100%;
 }
-.o-menu .o-card__content {
+.o-menu .o-item__content {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: flex-end;
   width: 100%;
 }
-.o-menu .o-card__text {
+.o-menu .o-item__text {
   margin-top: 10px;
   padding: 0;
 }
-.o-menu .o-card__title, .o-menu .o-card__price {
+.o-menu .o-item__title, .o-menu .o-item__price {
   font-size: 16px;
   font-weight: 500;
 }
