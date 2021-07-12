@@ -372,6 +372,32 @@ p {
 }
 /*** END MEDIAQUERIES ***/
 /*** 02 - END LAYOUTS ***/
+/*** 03 - COMPONENTS ***/
+.o-card__favorite {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+}
+.o-card__favorite::before {
+  content: "";
+  font-family: "Font Awesome 5 Free";
+  font-size: 20px;
+  display: block;
+  transition: all ease-in-out 350ms;
+}
+.o-card__favorite:hover::before {
+  color: #9356DC;
+  font-weight: 900;
+  transition: all ease-in-out 350ms;
+}
+.o-card__favorite:hover {
+  cursor: pointer;
+}
+
+/*** 03 - COMPONENTS ***/
 /*** 01 - HERO ***/
 .o-hero--home {
   background-color: #f6f6f6;
@@ -566,26 +592,6 @@ p {
 }
 .o-restaurants .o-card__desc span {
   font-weight: 300;
-}
-.o-restaurants .o-card__favorite {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
-  height: 50px;
-  width: 50px;
-}
-.o-restaurants .o-card__favorite::before {
-  content: "";
-  font-family: "Font Awesome 5 Free";
-  font-size: 20px;
-  display: block;
-  transition: all ease-in-out 350ms;
-}
-.o-restaurants .o-card__favorite:hover::before {
-  color: #9356DC;
-  font-weight: 900;
-  transition: all ease-in-out 350ms;
 }
 
 /*** 03 - RESTAURANTS HERO ***/

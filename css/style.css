@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
 	--- SUMMARY ---
 
@@ -361,5 +362,31 @@ p {
 }
 /*** END MEDIAQUERIES ***/
 /*** 02 - END LAYOUTS ***/
+/*** 03 - COMPONENTS ***/
+.o-card__favorite {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+}
+.o-card__favorite::before {
+  content: "";
+  font-family: "Font Awesome 5 Free";
+  font-size: 20px;
+  display: block;
+  transition: all ease-in-out 350ms;
+}
+.o-card__favorite:hover::before {
+  color: #9356DC;
+  font-weight: 900;
+  transition: all ease-in-out 350ms;
+}
+.o-card__favorite:hover {
+  cursor: pointer;
+}
+
+/*** 03 - COMPONENTS ***/
 
 /*# sourceMappingURL=style.css.map */

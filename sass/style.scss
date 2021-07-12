@@ -436,3 +436,38 @@
 
 	
 /*** 02 - END LAYOUTS ***/
+
+
+/*** 03 - COMPONENTS ***/
+
+	.o-card {
+		
+		&__favorite {
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: center;
+			align-items: center;
+			height: 50px;
+			width: 50px;
+		
+			&::before{
+				content:'\f004';
+				font-family: $font-icon;
+				font-size: 20px;
+				display: block;
+				transition: all ease-in-out 350ms;
+			}
+		
+			&:hover::before {
+				color: $purple;
+				font-weight: 900;
+				transition: all ease-in-out 350ms;
+			}
+
+			&:hover {
+				cursor: pointer;
+			}
+		}
+	}
+
+/*** 03 - COMPONENTS ***/
