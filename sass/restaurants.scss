@@ -73,6 +73,25 @@
 			align-items: flex-start;
 			padding: 15px 20px 15px 10px;
 			margin: 15px 0 0 0;
+			position: relative;
+
+			&::after {
+				content: '\f058';
+				font-family: $font-icon;
+				font-weight: 600;
+				background-color: $green;
+				border-radius: 0 15px 15px 0;
+				color: $light;
+				display: flex;
+				flex-flow: row wrap;
+				align-items: center;
+				justify-content: center;
+				height: 100%;
+				width: 70px;
+				position: absolute;
+				right: 0;
+				top: 0;
+			}
 
 			&__title {
 				width: 100%;

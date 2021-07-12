@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
 	--- SUMMARY ---
 
@@ -421,6 +422,24 @@ p {
   align-items: flex-start;
   padding: 15px 20px 15px 10px;
   margin: 15px 0 0 0;
+  position: relative;
+}
+.o-menu .o-card::after {
+  content: "";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 600;
+  background-color: #99E2D0;
+  border-radius: 0 15px 15px 0;
+  color: #ffffff;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 70px;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 .o-menu .o-card__title {
   width: 100%;
