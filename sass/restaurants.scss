@@ -127,7 +127,7 @@
 			&:hover {
 
 				.o-item {
-					animation: ChangeWith 350ms cubic-bezier(0.4, 0.1, 0.6, 0.9) forwards;
+					animation: ChangeWith 350ms cubic-bezier(0.4, 0.1, 0.6, 0.9) both;
 
 					&__text {
 						text-overflow: ellipsis;
@@ -138,11 +138,11 @@
 				}
 
 				&::before {
-					animation: RotateCheck 350ms cubic-bezier(0.4, 0.1, 0.6, 0.9) forwards;
+					animation: RotateCheck 350ms cubic-bezier(0.4, 0.1, 0.6, 0.9) both;
 				}
 
 				&::after  {
-					animation: MenuCard 350ms cubic-bezier(0.4, 0.1, 0.6, 0.9) forwards;
+					animation: MenuCard 350ms cubic-bezier(0.4, 0.1, 0.6, 0.9) both;
 				}
 			}
 		}
@@ -166,10 +166,6 @@
 			&__text {
 				margin-top: 10px;
 				padding: 0;
-				text-overflow: ellipsis;
-				white-space: nowrap;
-				overflow: hidden;
-				width: calc(100% - 70px);
 			}
 
 			&__title,

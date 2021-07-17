@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*
 	--- SUMMARY ---
 
@@ -110,9 +109,12 @@ p {
   border-radius: 50px;
   padding: 19px 22px;
   transition: all 450ms ease;
+  box-shadow: 0 5px 10px 0 #d9d9d9;
 }
 .o-button:hover {
   cursor: pointer;
+  opacity: 0.9;
+  box-shadow: 0 5px 10px 0 #000000;
 }
 
 /*** 01 - END GENERAL ***/
@@ -419,21 +421,18 @@ p {
   align-items: center;
   height: 50px;
   width: 50px;
+  transition: all ease-in-out 350ms;
 }
-.o-card__favorite::before {
-  content: "";
+.o-card__favorite i {
   font-family: "Font Awesome 5 Free";
   font-size: 20px;
-  display: block;
-  transition: all ease-in-out 350ms;
 }
-.o-card__favorite:hover::before {
-  color: #9356DC;
+.o-card__favorite:hover i {
+  background: linear-gradient(180deg, #FF79DA 10%, #9356DC 95%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-weight: 900;
   transition: all ease-in-out 350ms;
-}
-.o-card__favorite:hover {
-  cursor: pointer;
 }
 
 /*** 03 - COMPONENTS ***/

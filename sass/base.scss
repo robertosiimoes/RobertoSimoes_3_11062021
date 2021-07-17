@@ -37,6 +37,7 @@
 	$padding--tablet : 40px;
 
 	$boxShadow : 0 5px 10px 0 lighten($dark, 85%);
+	$boxShadow-darken : 0 5px 10px 0 $dark;
 
 	$checked-width : 70px;
 	$checked-height: 100%;
