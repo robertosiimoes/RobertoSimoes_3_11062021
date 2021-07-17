@@ -417,6 +417,9 @@ p {
   font-family: "Font Awesome 5 Free";
   font-size: 20px;
 }
+.o-card__favorite:hover {
+  cursor: pointer;
+}
 .o-card__favorite:hover i {
   background: linear-gradient(180deg, #FF79DA 10%, #9356DC 95%);
   -webkit-background-clip: text;
