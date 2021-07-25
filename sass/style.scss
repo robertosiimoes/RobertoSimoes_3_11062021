@@ -489,13 +489,9 @@
 		left: 0;
 		animation: FadeOut 0.2s 3s forwards;
 
-		img {
-			margin-bottom: 15px;
-		}
-
-		span {
-			color: $light;
-			margin-bottom: 30px;
+		&__logo {
+			margin-bottom: 45px;
+			filter: invert(1);
 		}
 
 		&__spinner {
