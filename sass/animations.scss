@@ -27,7 +27,7 @@
 		opacity: 0;
 		width: 0px;
 	}
-	to   {
+	to {
 		opacity: 1;
 		width: 70px;
 	}
@@ -46,5 +46,17 @@
 		transform: rotate(360deg);
 	}
 }
+
+// Items menu appearing
+@keyframes SlideUP {
+	from {
+	  transform: translateY(20px);
+	  opacity: 0%;
+	}
+	to {
+	  transform: translateY(0px);
+	  opacity: 100%;
+	}
+  }
 
 /*** 01 - END ANIMATIONS ***/

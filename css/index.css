@@ -63,6 +63,16 @@
     transform: rotate(360deg);
   }
 }
+@keyframes SlideUP {
+  from {
+    transform: translateY(20px);
+    opacity: 0%;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 100%;
+  }
+}
 /*** 01 - END ANIMATIONS ***/
 /*** 01 - GENERAL ***/
 *, *::before, *::after {
