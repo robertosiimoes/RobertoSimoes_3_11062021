@@ -45,22 +45,43 @@
   from {
     opacity: 0;
     width: 0px;
+    -webkit-transform: rotate(0);
     transform: rotate(0);
   }
   to {
     opacity: 1;
     width: 70px;
+    -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
   }
 }
 @keyframes SlideUP {
   from {
+    -webkit-transform: translateY(20px);
     transform: translateY(20px);
     opacity: 0%;
   }
   to {
+    -webkit-transform: translateY(0px);
     transform: translateY(0px);
     opacity: 100%;
+  }
+}
+@keyframes Loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes FadeOut {
+  from {
+    opacity: 100%;
+  }
+  to {
+    opacity: 0%;
+    visibility: hidden;
   }
 }
 /*** 01 - END ANIMATIONS ***/
@@ -128,7 +149,7 @@ p {
   justify-content: center;
   box-shadow: 0 5px 10px 0 #d9d9d9;
   position: fixed;
-  z-index: 9999;
+  z-index: 999;
   top: 0;
   height: 63px;
   width: 100%;
@@ -436,6 +457,43 @@ p {
   -webkit-text-fill-color: transparent;
   font-weight: 900;
   transition: all ease-in-out 350ms;
+}
+
+.o-loader {
+  background: linear-gradient(180deg, #FF79DA 10%, #9356DC 95%);
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  animation: FadeOut 0.2s 3s forwards;
+}
+.o-loader img {
+  margin-bottom: 15px;
+}
+.o-loader span {
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+.o-loader__spinner {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+}
+.o-loader__spinner:after {
+  content: " ";
+  display: block;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: 6px solid #ffffff;
+  border-color: #ffffff transparent #ffffff transparent;
+  animation: Loading 1.2s linear infinite;
 }
 
 /*** 03 - COMPONENTS ***/

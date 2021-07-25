@@ -83,7 +83,7 @@
 			justify-content: center;
 			box-shadow: $boxShadow;
 			position: fixed;
-			z-index: 9999;
+			z-index: 999;
 			top: 0;
 			height: $header-height--mobile;
 			width: 100%;
@@ -470,6 +470,48 @@
 				-webkit-text-fill-color: transparent;
 				font-weight: 900;
 				transition: all ease-in-out 350ms;
+			}
+		}
+	}
+
+
+	.o-loader {
+		background: $bg-button;
+		display: flex;
+		flex-flow: column wrap;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+		width: 100%;
+		position: fixed;
+		z-index: 9999;
+		top: 0;
+		left: 0;
+		animation: FadeOut 0.2s 3s forwards;
+
+		img {
+			margin-bottom: 15px;
+		}
+
+		span {
+			color: $light;
+			margin-bottom: 30px;
+		}
+
+		&__spinner {
+			display: inline-block;
+			width: 80px;
+			height: 80px;
+
+			&:after {
+				content: " ";
+				display: block;
+				width: 64px;
+				height: 64px;
+				border-radius: 50%;
+				border: 6px solid $light;
+				border-color: $light transparent $light transparent;
+				animation: Loading 1.2s linear infinite;
 			}
 		}
 	}
